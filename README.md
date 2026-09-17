@@ -3,10 +3,12 @@
 # 🚴 AdventureWorks Enterprise SQL & Business Analytics
 ### **Relational Data Modeling • Advanced SQL Queries • Window Functions • Interactive KPI Dashboard**
 
-[![SQL](https://img.shields.io/badge/SQL-Advanced_Queries-CC292B?style=for-the-badge&logo=postgresql&logoColor=white)](sql/)
-[![MySQL](https://img.shields.io/badge/MySQL-Compatible-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](sql/)
-[![Records](https://img.shields.io/badge/Dataset-60%2C398_Transactions-10B981?style=for-the-badge)](data/)
-[![Dashboard](https://img.shields.io/badge/Web_Dashboard-Interactive_Hub-2563EB?style=for-the-badge)](dashboard/index.html)
+[![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)](powerbi/)
+[![Tableau](https://img.shields.io/badge/Tableau-Workbook-E97627?style=for-the-badge&logo=tableau&logoColor=white)](tableau/)
+[![Excel](https://img.shields.io/badge/Excel-Financial_Model-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](excel/)
+[![SQL](https://img.shields.io/badge/SQL-Analytics-CC292B?style=for-the-badge&logo=postgresql&logoColor=white)](sql/)
+[![Presentation](https://img.shields.io/badge/Executive-Presentation_Deck-D24726?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](presentation/)
+[![Dashboard](https://img.shields.io/badge/Web_Hub-Interactive-2563EB?style=for-the-badge)](dashboard/index.html)
 
 <br/>
 
@@ -158,7 +160,15 @@ To preview the dashboard, simply open [`dashboard/index.html`](dashboard/index.h
 ├── docs/
 │   ├── AdventureWorks_SQL_Beginner_Master_Guide.pdf # In-depth technical assignment walkthrough
 │   └── Adventure details.docx               # Business requirements & schema reference
+├── excel/
+│   └── Solution.xlsx                        # Full Excel analytical financial workbook & pivots
+├── powerbi/
+│   ├── AdventureWorks-Dashboard.pbix        # Production Power BI data model & dashboards
+│   └── AdventureWorks-Dashboard.pdf         # Exported high-resolution executive report
+├── presentation/
+│   └── FINAL PPT.pptx                       # Executive stakeholder presentation deck
 ├── sql/
+│   ├── AdventureSQLproject final.sql        # Consolidated master SQL analysis script
 │   ├── Q0.sql                               # Master Sales View definition
 │   ├── Q1-2.sql                             # Enriched lookup validation
 │   ├── Q3.sql                               # 9 Date attributes extraction
@@ -170,6 +180,8 @@ To preview the dashboard, simply open [`dashboard/index.html`](dashboard/index.h
 │   ├── Q11.sql                              # Sales vs. Production cost variance
 │   ├── Q12.sql                              # Executive KPI scorecard
 │   └── Q13-Top Costomer Ranking.sql         # Customer ranking with window functions
+├── tableau/
+│   └── Adventure Work Sales Analysis Dashboard.twbx # Packaged Tableau analytical workbook
 ├── .gitignore
 └── README.md
 ```
