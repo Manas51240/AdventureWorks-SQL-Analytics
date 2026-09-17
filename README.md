@@ -30,6 +30,33 @@ AdventureWorks is a multinational manufacturing company producing bicycles, comp
 
 ---
 
+## 📸 Interactive Dashboards & Visualizations
+
+The reporting solution delivers interactive business intelligence across multiple tools:
+
+### 1. Tableau Sales & Margin Intelligence Dashboard
+*Comprehensive multi-page analytical dashboard analyzing product category revenue, territory distribution, and customer ranking.*
+
+<div align="center">
+  <img src="images/Adventure-Works-Tableu-Dashboard.png" alt="AdventureWorks Tableau Analytical Dashboard" width="95%" />
+</div>
+
+<br/>
+
+### 2. Executive Performance & Financial Scorecard Matrix
+*Dynamic visualization breakdowns for YoY sales performance and regional cost vs revenue variance.*
+
+<div align="center">
+  <img src="images/adventureworks-sales-performance.svg" alt="AdventureWorks Sales Performance Matrix" width="48%" />
+  <img src="images/adventureworks-financial-matrix.svg" alt="AdventureWorks Financial Matrix" width="48%" />
+</div>
+
+<br/>
+
+> 📄 **Official Deliverable:** [Download Complete Power BI Executive Report (PDF)](powerbi/AdventureWorks-Dashboard.pdf)
+
+---
+
 ## 🗄️ Relational Schema & Dimensional Architecture
 
 ```mermaid
@@ -162,6 +189,10 @@ To preview the dashboard, simply open [`dashboard/index.html`](dashboard/index.h
 │   └── Adventure details.docx               # Business requirements & schema reference
 ├── excel/
 │   └── Solution.xlsx                        # Full Excel analytical financial workbook & pivots
+├── images/
+│   ├── Adventure-Works-Tableu-Dashboard.png # High-res Tableau analytical dashboard view
+│   ├── adventureworks-financial-matrix.svg  # Financial scorecard matrix
+│   └── adventureworks-sales-performance.svg # Regional sales performance chart
 ├── powerbi/
 │   ├── AdventureWorks-Dashboard.pbix        # Production Power BI data model & dashboards
 │   └── AdventureWorks-Dashboard.pdf         # Exported high-resolution executive report
