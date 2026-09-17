@@ -253,5 +253,5 @@ source sql/Q13-Top Costomer Ranking.sql;
 **Manas Deshmukh**  
 *Data Analyst & BI Specialist*  
 - 💼 **LinkedIn:** [linkedin.com/in/manas-deshmukh-493a35218](https://www.linkedin.com/in/manas-deshmukh-493a35218)  
-- 🌐 **Portfolio:** [manas-deshmukh.dev](https://manas-deshmukh.dev)  
-- 📧 **Email:** [manasdeshmukh51240@gmail.com](mailto:manasdeshmukh51240@gmail.com)  
+- 🌐 **Portfolio:** [manas-deshmukh.vercel.app](https://manas-deshmukh.vercel.app/)  
+- 📧 **Email:** [manasdeshmukh512@gmail.com](mailto:manasdeshmukh512@gmail.com)  
