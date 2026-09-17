@@ -1,0 +1,907 @@
+{
+  "kpis": {
+    "total_records": 60398,
+    "total_orders": 27659,
+    "total_sales": 29358677.89,
+    "total_cost": 17277858.06,
+    "total_profit": 12080819.83,
+    "profit_margin": 41.15
+  },
+  "q7_pivot_years": {
+    "2010": [
+      {
+        "MonthNo": 12,
+        "MonthName": "December",
+        "Sales": 43421.04
+      }
+    ],
+    "2011": [
+      {
+        "MonthNo": 1,
+        "MonthName": "January",
+        "Sales": 469823.94
+      },
+      {
+        "MonthNo": 2,
+        "MonthName": "February",
+        "Sales": 466334.93
+      },
+      {
+        "MonthNo": 3,
+        "MonthName": "March",
+        "Sales": 485198.69
+      },
+      {
+        "MonthNo": 4,
+        "MonthName": "April",
+        "Sales": 502073.88
+      },
+      {
+        "MonthNo": 5,
+        "MonthName": "May",
+        "Sales": 561681.51
+      },
+      {
+        "MonthNo": 6,
+        "MonthName": "June",
+        "Sales": 737839.87
+      },
+      {
+        "MonthNo": 7,
+        "MonthName": "July",
+        "Sales": 596746.6
+      },
+      {
+        "MonthNo": 8,
+        "MonthName": "August",
+        "Sales": 614557.98
+      },
+      {
+        "MonthNo": 9,
+        "MonthName": "September",
+        "Sales": 603083.53
+      },
+      {
+        "MonthNo": 10,
+        "MonthName": "October",
+        "Sales": 708208.05
+      },
+      {
+        "MonthNo": 11,
+        "MonthName": "November",
+        "Sales": 660545.86
+      },
+      {
+        "MonthNo": 12,
+        "MonthName": "December",
+        "Sales": 669431.54
+      }
+    ],
+    "2012": [
+      {
+        "MonthNo": 1,
+        "MonthName": "January",
+        "Sales": 495364.01
+      },
+      {
+        "MonthNo": 2,
+        "MonthName": "February",
+        "Sales": 506994.08
+      },
+      {
+        "MonthNo": 3,
+        "MonthName": "March",
+        "Sales": 373482.95
+      },
+      {
+        "MonthNo": 4,
+        "MonthName": "April",
+        "Sales": 400335.59
+      },
+      {
+        "MonthNo": 5,
+        "MonthName": "May",
+        "Sales": 358877.87
+      },
+      {
+        "MonthNo": 6,
+        "MonthName": "June",
+        "Sales": 555160.18
+      },
+      {
+        "MonthNo": 7,
+        "MonthName": "July",
+        "Sales": 444558.28
+      },
+      {
+        "MonthNo": 8,
+        "MonthName": "August",
+        "Sales": 523917.45
+      },
+      {
+        "MonthNo": 9,
+        "MonthName": "September",
+        "Sales": 486177.5
+      },
+      {
+        "MonthNo": 10,
+        "MonthName": "October",
+        "Sales": 535159.56
+      },
+      {
+        "MonthNo": 11,
+        "MonthName": "November",
+        "Sales": 537955.67
+      },
+      {
+        "MonthNo": 12,
+        "MonthName": "December",
+        "Sales": 624502.27
+      }
+    ],
+    "2013": [
+      {
+        "MonthNo": 1,
+        "MonthName": "January",
+        "Sales": 857689.91
+      },
+      {
+        "MonthNo": 2,
+        "MonthName": "February",
+        "Sales": 771348.74
+      },
+      {
+        "MonthNo": 3,
+        "MonthName": "March",
+        "Sales": 1049907.39
+      },
+      {
+        "MonthNo": 4,
+        "MonthName": "April",
+        "Sales": 1046022.77
+      },
+      {
+        "MonthNo": 5,
+        "MonthName": "May",
+        "Sales": 1284592.93
+      },
+      {
+        "MonthNo": 6,
+        "MonthName": "June",
+        "Sales": 1643177.78
+      },
+      {
+        "MonthNo": 7,
+        "MonthName": "July",
+        "Sales": 1371675.81
+      },
+      {
+        "MonthNo": 8,
+        "MonthName": "August",
+        "Sales": 1551065.56
+      },
+      {
+        "MonthNo": 9,
+        "MonthName": "September",
+        "Sales": 1447495.69
+      },
+      {
+        "MonthNo": 10,
+        "MonthName": "October",
+        "Sales": 1673293.41
+      },
+      {
+        "MonthNo": 11,
+        "MonthName": "November",
+        "Sales": 1780920.06
+      },
+      {
+        "MonthNo": 12,
+        "MonthName": "December",
+        "Sales": 1874360.29
+      }
+    ],
+    "2014": [
+      {
+        "MonthNo": 1,
+        "MonthName": "January",
+        "Sales": 45694.72
+      }
+    ],
+    "all": [
+      {
+        "MonthNo": 1,
+        "MonthName": "January",
+        "Sales": 1868572.58
+      },
+      {
+        "MonthNo": 2,
+        "MonthName": "February",
+        "Sales": 1744677.75
+      },
+      {
+        "MonthNo": 3,
+        "MonthName": "March",
+        "Sales": 1908589.03
+      },
+      {
+        "MonthNo": 4,
+        "MonthName": "April",
+        "Sales": 1948432.24
+      },
+      {
+        "MonthNo": 5,
+        "MonthName": "May",
+        "Sales": 2205152.31
+      },
+      {
+        "MonthNo": 6,
+        "MonthName": "June",
+        "Sales": 2936177.83
+      },
+      {
+        "MonthNo": 7,
+        "MonthName": "July",
+        "Sales": 2412980.69
+      },
+      {
+        "MonthNo": 8,
+        "MonthName": "August",
+        "Sales": 2689540.99
+      },
+      {
+        "MonthNo": 9,
+        "MonthName": "September",
+        "Sales": 2536756.72
+      },
+      {
+        "MonthNo": 10,
+        "MonthName": "October",
+        "Sales": 2916661.02
+      },
+      {
+        "MonthNo": 11,
+        "MonthName": "November",
+        "Sales": 2979421.59
+      },
+      {
+        "MonthNo": 12,
+        "MonthName": "December",
+        "Sales": 3211715.14
+      }
+    ]
+  },
+  "q8_yoy_sales": [
+    {
+      "Year": 2010,
+      "Sales": 43421.04,
+      "Profit": 17849.02
+    },
+    {
+      "Year": 2011,
+      "Sales": 7075526.38,
+      "Profit": 2844071.44
+    },
+    {
+      "Year": 2012,
+      "Sales": 5842485.41,
+      "Profit": 2428003.91
+    },
+    {
+      "Year": 2013,
+      "Sales": 16351550.34,
+      "Profit": 6765345.53
+    },
+    {
+      "Year": 2014,
+      "Sales": 45694.72,
+      "Profit": 25549.93
+    }
+  ],
+  "q9_monthly_sales": [
+    {
+      "MonthNo": 1,
+      "MonthName": "January",
+      "Sales": 1868572.58
+    },
+    {
+      "MonthNo": 2,
+      "MonthName": "February",
+      "Sales": 1744677.75
+    },
+    {
+      "MonthNo": 3,
+      "MonthName": "March",
+      "Sales": 1908589.03
+    },
+    {
+      "MonthNo": 4,
+      "MonthName": "April",
+      "Sales": 1948432.24
+    },
+    {
+      "MonthNo": 5,
+      "MonthName": "May",
+      "Sales": 2205152.31
+    },
+    {
+      "MonthNo": 6,
+      "MonthName": "June",
+      "Sales": 2936177.83
+    },
+    {
+      "MonthNo": 7,
+      "MonthName": "July",
+      "Sales": 2412980.69
+    },
+    {
+      "MonthNo": 8,
+      "MonthName": "August",
+      "Sales": 2689540.99
+    },
+    {
+      "MonthNo": 9,
+      "MonthName": "September",
+      "Sales": 2536756.72
+    },
+    {
+      "MonthNo": 10,
+      "MonthName": "October",
+      "Sales": 2916661.02
+    },
+    {
+      "MonthNo": 11,
+      "MonthName": "November",
+      "Sales": 2979421.59
+    },
+    {
+      "MonthNo": 12,
+      "MonthName": "December",
+      "Sales": 3211715.14
+    }
+  ],
+  "q10_quarterly_sales": [
+    {
+      "Quarter": "Q1",
+      "Sales": 5521839.36
+    },
+    {
+      "Quarter": "Q2",
+      "Sales": 7089762.38
+    },
+    {
+      "Quarter": "Q3",
+      "Sales": 7639278.4
+    },
+    {
+      "Quarter": "Q4",
+      "Sales": 9107797.75
+    }
+  ],
+  "q11_combo_sales_cost": [
+    {
+      "YearMonth": "2010-Dec",
+      "Sales": 43421.04,
+      "Cost": 25572.02
+    },
+    {
+      "YearMonth": "2011-Jan",
+      "Sales": 469823.94,
+      "Cost": 280872.24
+    },
+    {
+      "YearMonth": "2011-Feb",
+      "Sales": 466334.93,
+      "Cost": 278294.5
+    },
+    {
+      "YearMonth": "2011-Mar",
+      "Sales": 485198.69,
+      "Cost": 292120.92
+    },
+    {
+      "YearMonth": "2011-Apr",
+      "Sales": 502073.88,
+      "Cost": 300539.33
+    },
+    {
+      "YearMonth": "2011-May",
+      "Sales": 561681.51,
+      "Cost": 335651.34
+    },
+    {
+      "YearMonth": "2011-Jun",
+      "Sales": 737839.87,
+      "Cost": 441714.04
+    },
+    {
+      "YearMonth": "2011-Jul",
+      "Sales": 596746.6,
+      "Cost": 356425.04
+    },
+    {
+      "YearMonth": "2011-Aug",
+      "Sales": 614557.98,
+      "Cost": 369480.75
+    },
+    {
+      "YearMonth": "2011-Sep",
+      "Sales": 603083.53,
+      "Cost": 360186.81
+    },
+    {
+      "YearMonth": "2011-Oct",
+      "Sales": 708208.05,
+      "Cost": 423440.41
+    },
+    {
+      "YearMonth": "2011-Nov",
+      "Sales": 660545.86,
+      "Cost": 393616.62
+    },
+    {
+      "YearMonth": "2011-Dec",
+      "Sales": 669431.54,
+      "Cost": 399112.94
+    },
+    {
+      "YearMonth": "2012-Jan",
+      "Sales": 495364.01,
+      "Cost": 295351.5
+    },
+    {
+      "YearMonth": "2012-Feb",
+      "Sales": 506994.08,
+      "Cost": 301055.47
+    },
+    {
+      "YearMonth": "2012-Mar",
+      "Sales": 373482.95,
+      "Cost": 221598.79
+    },
+    {
+      "YearMonth": "2012-Apr",
+      "Sales": 400335.59,
+      "Cost": 235073.47
+    },
+    {
+      "YearMonth": "2012-May",
+      "Sales": 358877.87,
+      "Cost": 212590.95
+    },
+    {
+      "YearMonth": "2012-Jun",
+      "Sales": 555160.18,
+      "Cost": 323020.37
+    },
+    {
+      "YearMonth": "2012-Jul",
+      "Sales": 444558.28,
+      "Cost": 258202.22
+    },
+    {
+      "YearMonth": "2012-Aug",
+      "Sales": 523917.45,
+      "Cost": 303996.46
+    },
+    {
+      "YearMonth": "2012-Sep",
+      "Sales": 486177.5,
+      "Cost": 282167.89
+    },
+    {
+      "YearMonth": "2012-Oct",
+      "Sales": 535159.56,
+      "Cost": 309799.49
+    },
+    {
+      "YearMonth": "2012-Nov",
+      "Sales": 537955.67,
+      "Cost": 310338.77
+    },
+    {
+      "YearMonth": "2012-Dec",
+      "Sales": 624502.27,
+      "Cost": 361286.12
+    },
+    {
+      "YearMonth": "2013-Jan",
+      "Sales": 857689.91,
+      "Cost": 506264.6
+    },
+    {
+      "YearMonth": "2013-Feb",
+      "Sales": 771348.74,
+      "Cost": 450510.81
+    },
+    {
+      "YearMonth": "2013-Mar",
+      "Sales": 1049907.39,
+      "Cost": 612135.22
+    },
+    {
+      "YearMonth": "2013-Apr",
+      "Sales": 1046022.77,
+      "Cost": 612251.68
+    },
+    {
+      "YearMonth": "2013-May",
+      "Sales": 1284592.93,
+      "Cost": 753176.22
+    },
+    {
+      "YearMonth": "2013-Jun",
+      "Sales": 1643177.78,
+      "Cost": 966506.22
+    },
+    {
+      "YearMonth": "2013-Jul",
+      "Sales": 1371675.81,
+      "Cost": 803127.15
+    },
+    {
+      "YearMonth": "2013-Aug",
+      "Sales": 1551065.56,
+      "Cost": 910282.81
+    },
+    {
+      "YearMonth": "2013-Sep",
+      "Sales": 1447495.69,
+      "Cost": 849272.52
+    },
+    {
+      "YearMonth": "2013-Oct",
+      "Sales": 1673293.41,
+      "Cost": 983129.32
+    },
+    {
+      "YearMonth": "2013-Nov",
+      "Sales": 1780920.06,
+      "Cost": 1041420.62
+    },
+    {
+      "YearMonth": "2013-Dec",
+      "Sales": 1874360.29,
+      "Cost": 1098127.64
+    },
+    {
+      "YearMonth": "2014-Jan",
+      "Sales": 45694.72,
+      "Cost": 20144.79
+    }
+  ],
+  "q12a_categories": [
+    {
+      "Category": "Bikes",
+      "Profit": 11505798.93,
+      "Sales": 28318145.32
+    },
+    {
+      "Category": "Accessories",
+      "Profit": 438599.65,
+      "Sales": 700759.96
+    },
+    {
+      "Category": "Clothing",
+      "Profit": 136421.25,
+      "Sales": 339772.61
+    }
+  ],
+  "top5_subcategories": [
+    {
+      "Subcategory": "Road Bikes",
+      "Sales": 14520583.5,
+      "Profit": 5537301.45
+    },
+    {
+      "Subcategory": "Mountain Bikes",
+      "Sales": 9952760.77,
+      "Profit": 4513624.53
+    },
+    {
+      "Subcategory": "Touring Bikes",
+      "Sales": 3844801.05,
+      "Profit": 1454872.95
+    },
+    {
+      "Subcategory": "Tires and Tubes",
+      "Sales": 245529.32,
+      "Profit": 153668.57
+    },
+    {
+      "Subcategory": "Helmets",
+      "Sales": 225335.6,
+      "Profit": 141036.0
+    }
+  ],
+  "top10_products": [
+    {
+      "ProductName": "Mountain-200 Black, 46",
+      "Sales": 1373469.91,
+      "Profit": 626622.48
+    },
+    {
+      "ProductName": "Mountain-200 Black, 42",
+      "Sales": 1363142.43,
+      "Profit": 621760.5
+    },
+    {
+      "ProductName": "Mountain-200 Silver, 38",
+      "Sales": 1339462.86,
+      "Profit": 610863.58
+    },
+    {
+      "ProductName": "Mountain-200 Silver, 46",
+      "Sales": 1301100.17,
+      "Profit": 593489.61
+    },
+    {
+      "ProductName": "Mountain-200 Black, 38",
+      "Sales": 1294866.44,
+      "Profit": 590478.3
+    },
+    {
+      "ProductName": "Mountain-200 Silver, 42",
+      "Sales": 1257434.64,
+      "Profit": 573511.12
+    },
+    {
+      "ProductName": "Road-150 Red, 48",
+      "Sales": 1205876.99,
+      "Profit": 474152.26
+    },
+    {
+      "ProductName": "Road-150 Red, 62",
+      "Sales": 1202298.72,
+      "Profit": 472745.28
+    },
+    {
+      "ProductName": "Road-150 Red, 52",
+      "Sales": 1080637.54,
+      "Profit": 424907.96
+    },
+    {
+      "ProductName": "Road-150 Red, 56",
+      "Sales": 1055589.65,
+      "Profit": 415059.1
+    }
+  ],
+  "q12b_top_customers": [
+    {
+      "Rank": 1,
+      "CustomerFullName": "Nichole Nara",
+      "Revenue": 13295.38
+    },
+    {
+      "Rank": 2,
+      "CustomerFullName": "Kaitlyn J Henderson",
+      "Revenue": 13294.27
+    },
+    {
+      "Rank": 3,
+      "CustomerFullName": "Margaret He",
+      "Revenue": 13269.27
+    },
+    {
+      "Rank": 4,
+      "CustomerFullName": "Randall M Dominguez",
+      "Revenue": 13265.99
+    },
+    {
+      "Rank": 5,
+      "CustomerFullName": "Adriana L Gonzalez",
+      "Revenue": 13242.7
+    },
+    {
+      "Rank": 6,
+      "CustomerFullName": "Rosa K Hu",
+      "Revenue": 13215.65
+    },
+    {
+      "Rank": 7,
+      "CustomerFullName": "Brandi D Gill",
+      "Revenue": 13195.64
+    },
+    {
+      "Rank": 8,
+      "CustomerFullName": "Brad She",
+      "Revenue": 13173.19
+    },
+    {
+      "Rank": 9,
+      "CustomerFullName": "Francisco A Sara",
+      "Revenue": 13164.64
+    },
+    {
+      "Rank": 10,
+      "CustomerFullName": "Maurice M Shan",
+      "Revenue": 12909.67
+    }
+  ],
+  "q12c_regions": [
+    {
+      "Country": "United States",
+      "GroupRegion": "North America",
+      "Revenue": 9389789.94
+    },
+    {
+      "Country": "Australia",
+      "GroupRegion": "Pacific",
+      "Revenue": 9061000.72
+    },
+    {
+      "Country": "United Kingdom",
+      "GroupRegion": "Europe",
+      "Revenue": 3391712.24
+    },
+    {
+      "Country": "Germany",
+      "GroupRegion": "Europe",
+      "Revenue": 2894312.36
+    },
+    {
+      "Country": "France",
+      "GroupRegion": "Europe",
+      "Revenue": 2644017.74
+    },
+    {
+      "Country": "Canada",
+      "GroupRegion": "North America",
+      "Revenue": 1977844.89
+    }
+  ],
+  "sales_sparkline": [
+    {
+      "YearMonth": "2010-Dec",
+      "Sales": 43421.04
+    },
+    {
+      "YearMonth": "2011-Jan",
+      "Sales": 469823.94
+    },
+    {
+      "YearMonth": "2011-Feb",
+      "Sales": 466334.93
+    },
+    {
+      "YearMonth": "2011-Mar",
+      "Sales": 485198.69
+    },
+    {
+      "YearMonth": "2011-Apr",
+      "Sales": 502073.88
+    },
+    {
+      "YearMonth": "2011-May",
+      "Sales": 561681.51
+    },
+    {
+      "YearMonth": "2011-Jun",
+      "Sales": 737839.87
+    },
+    {
+      "YearMonth": "2011-Jul",
+      "Sales": 596746.6
+    },
+    {
+      "YearMonth": "2011-Aug",
+      "Sales": 614557.98
+    },
+    {
+      "YearMonth": "2011-Sep",
+      "Sales": 603083.53
+    },
+    {
+      "YearMonth": "2011-Oct",
+      "Sales": 708208.05
+    },
+    {
+      "YearMonth": "2011-Nov",
+      "Sales": 660545.86
+    },
+    {
+      "YearMonth": "2011-Dec",
+      "Sales": 669431.54
+    },
+    {
+      "YearMonth": "2012-Jan",
+      "Sales": 495364.01
+    },
+    {
+      "YearMonth": "2012-Feb",
+      "Sales": 506994.08
+    },
+    {
+      "YearMonth": "2012-Mar",
+      "Sales": 373482.95
+    },
+    {
+      "YearMonth": "2012-Apr",
+      "Sales": 400335.59
+    },
+    {
+      "YearMonth": "2012-May",
+      "Sales": 358877.87
+    },
+    {
+      "YearMonth": "2012-Jun",
+      "Sales": 555160.18
+    },
+    {
+      "YearMonth": "2012-Jul",
+      "Sales": 444558.28
+    },
+    {
+      "YearMonth": "2012-Aug",
+      "Sales": 523917.45
+    },
+    {
+      "YearMonth": "2012-Sep",
+      "Sales": 486177.5
+    },
+    {
+      "YearMonth": "2012-Oct",
+      "Sales": 535159.56
+    },
+    {
+      "YearMonth": "2012-Nov",
+      "Sales": 537955.67
+    },
+    {
+      "YearMonth": "2012-Dec",
+      "Sales": 624502.27
+    },
+    {
+      "YearMonth": "2013-Jan",
+      "Sales": 857689.91
+    },
+    {
+      "YearMonth": "2013-Feb",
+      "Sales": 771348.74
+    },
+    {
+      "YearMonth": "2013-Mar",
+      "Sales": 1049907.39
+    },
+    {
+      "YearMonth": "2013-Apr",
+      "Sales": 1046022.77
+    },
+    {
+      "YearMonth": "2013-May",
+      "Sales": 1284592.93
+    },
+    {
+      "YearMonth": "2013-Jun",
+      "Sales": 1643177.78
+    },
+    {
+      "YearMonth": "2013-Jul",
+      "Sales": 1371675.81
+    },
+    {
+      "YearMonth": "2013-Aug",
+      "Sales": 1551065.56
+    },
+    {
+      "YearMonth": "2013-Sep",
+      "Sales": 1447495.69
+    },
+    {
+      "YearMonth": "2013-Oct",
+      "Sales": 1673293.41
+    },
+    {
+      "YearMonth": "2013-Nov",
+      "Sales": 1780920.06
+    },
+    {
+      "YearMonth": "2013-Dec",
+      "Sales": 1874360.29
+    },
+    {
+      "YearMonth": "2014-Jan",
+      "Sales": 45694.72
+    }
+  ]
+}

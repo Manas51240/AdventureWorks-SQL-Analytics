@@ -1,0 +1,10 @@
+# System & Cache
+.DS_Store
+Thumbs.db
+*.tmp
+~$*.xlsx
+~$*.docx
+
+# IDEs
+.vscode/
+.idea/

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureWorks Complete SQL & Tableau Analytics Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">SQL</div>
+                <div class="brand-text">
+                    <h2>AdventureWorks</h2>
+                    <span>Full Analytics Hub</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="overview">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    Overview & All KPIs
+                </button>
+                <button class="nav-btn" data-tab="tableau-charts">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg>
+                    Tableau Charts (Q7-Q11)
+                </button>
+                <button class="nav-btn" data-tab="tableau-performance">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    Performance & Top 10s (Q12)
+                </button>
+                <button class="nav-btn" data-tab="tableau-lookups">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    Data Union & Lookups (Q0-Q6)
+                </button>
+                <button class="nav-btn" data-tab="sqllab">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    Minimal SQL Code Explorer
+                </button>
+            </nav>
+
+            <div class="mentor-badge">
+                <span class="badge-title">DA Assignment & Tableau Sync</span>
+                <p>Complete Questions Q0 to Q13</p>
+                <span class="status-pill">60,398 Live Records</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div>
+                    <h1 id="page-title">Executive Sales Overview & Key Metrics</h1>
+                    <p class="subtitle">Complete visual dashboard matching all Tableau Worksheets & SQL Queries (Q0 - Q13)</p>
+                </div>
+                <div class="header-actions">
+                    <label class="filter-label">Filter Year (Q7 Pivot):</label>
+                    <select id="year-filter" class="select-input" onchange="onYearFilterChange(this.value)">
+                        <option value="2013" selected>Year 2013</option>
+                        <option value="2012">Year 2012</option>
+                        <option value="2011">Year 2011</option>
+                        <option value="2010">Year 2010</option>
+                        <option value="2014">Year 2014</option>
+                        <option value="all">All Years Combined</option>
+                    </select>
+                    <button class="btn btn-primary" onclick="window.print()">Print / Export PDF</button>
+                </div>
+            </header>
+
+            <!-- 5 Tableau KPI Cards Row -->
+            <div class="kpi-grid">
+                <div class="kpi-card glass">
+                    <div class="kpi-icon sales">💰</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">KPI 1: Total Sales</span>
+                        <h3 class="kpi-value" id="kpi-sales">$0.00</h3>
+                        <span class="kpi-trend positive">Q4 Sales Amount</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card glass">
+                    <div class="kpi-icon cost">📦</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">KPI 4: Production Cost</span>
+                        <h3 class="kpi-value" id="kpi-cost">$0.00</h3>
+                        <span class="kpi-sub">Q5 Standard Cost</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card glass">
+                    <div class="kpi-icon profit">📈</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">KPI 2: Total Profit</span>
+                        <h3 class="kpi-value" id="kpi-profit">$0.00</h3>
+                        <span class="kpi-trend positive" id="kpi-margin">KPI 3: 41.15% Profit Margin</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card glass">
+                    <div class="kpi-icon orders">🛒</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">KPI 5: Total Orders</span>
+                        <h3 class="kpi-value" id="kpi-orders">0</h3>
+                        <span class="kpi-sub">Unique Sales Orders</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card glass">
+                    <div class="kpi-icon records">🗂️</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">Q0: Master Records</span>
+                        <h3 class="kpi-value" id="kpi-records">60,398</h3>
+                        <span class="kpi-sub">UNION ALL Sales Rows</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content Sections -->
+            
+            <!-- 1. OVERVIEW TAB -->
+            <section id="tab-overview" class="tab-section active">
+                <!-- Sparkline Sales Trend -->
+                <div class="chart-card glass margin-bottom">
+                    <div class="card-header">
+                        <h3>Sales Trend Over Time (Sparkline / Continuous Timeline)</h3>
+                    </div>
+                    <div class="chart-wrapper sparkline-height">
+                        <canvas id="chart-sparkline"></canvas>
+                    </div>
+                </div>
+
+                <div class="grid-2col">
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q8: Yearwise Sales (YoY Bar Chart)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-yoy"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q10: Quarterwise Sales (Pie / Doughnut Chart)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-quarter"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. TABLEAU CHARTS TAB (Q7 - Q11) -->
+            <section id="tab-tableau-charts" class="tab-section">
+                <div class="grid-2col">
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q9: Monthwise Sales (Line Chart)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-monthly"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q11: Sales Amount vs Production Cost (Combo Chart)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-combo"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card glass margin-top">
+                    <div class="card-header flex-between">
+                        <h3>Q7: Monthwise Sales Pivot Table</h3>
+                        <span class="badge-year" id="pivot-year-badge">Filtered: Year 2013</span>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table" id="table-q7">
+                            <thead>
+                                <tr>
+                                    <th>Month No</th>
+                                    <th>Month Name</th>
+                                    <th>Sales Amount ($)</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. TABLEAU PERFORMANCE & TOP 10S TAB (Q12 & Q13) -->
+            <section id="tab-tableau-performance" class="tab-section">
+                <div class="grid-2col">
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Top 5 Product Subcategories by Sales</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-top-subcategories"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Top 10 Products by Sales Revenue</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-top-products"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2col margin-top">
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Top 10 Customers (DENSE_RANK() Window Function)</h3>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="table-q12b">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Customer Full Name</th>
+                                        <th>Total Revenue ($)</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Sales by Region & Territory (Q12C)</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="chart-regions"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. TABLEAU LOOKUPS TAB (Q0 - Q6) -->
+            <section id="tab-tableau-lookups" class="tab-section">
+                <div class="grid-2col">
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q0: Data Union (FactInternetSales & Fact_Internet_Sales_New)</h3>
+                        </div>
+                        <div class="card-body-text">
+                            <p>Combines <strong>5,627</strong> rows from <code>FactInternetSales</code> and <strong>54,771</strong> rows from <code>Fact_Internet_Sales_New</code> into a single unified dataset of <strong>60,398 rows</strong> using <code>UNION ALL</code>.</p>
+                            <div class="stat-pill-row">
+                                <span class="pill">FactInternetSales: 5,627</span>
+                                <span class="pill">Fact_Internet_Sales_New: 54,771</span>
+                                <span class="pill active">Total Master Sales: 60,398</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-card glass">
+                        <div class="card-header">
+                            <h3>Q1 & Q2: Dimension Lookups (Product & Customer)</h3>
+                        </div>
+                        <div class="card-body-text">
+                            <p>Connects <code>vw_MasterSales</code> with <code>DimProduct</code> and <code>DimCustomer</code> via <code>LEFT JOIN</code> to retrieve <code>ProductName</code>, <code>UnitPrice</code>, <code>UnitCost</code>, and concatenated <code>CustomerFullName</code>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card glass margin-top">
+                    <div class="card-header">
+                        <h3>Q3: 9 Date Attributes Breakdown Sample</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>OrderDateKey</th>
+                                    <th>Standard Date</th>
+                                    <th>Year</th>
+                                    <th>Month No</th>
+                                    <th>Month Name</th>
+                                    <th>Quarter</th>
+                                    <th>YearMonth</th>
+                                    <th>Financial Month</th>
+                                    <th>Financial Quarter</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20130101</td>
+                                    <td>2013-01-01</td>
+                                    <td>2013</td>
+                                    <td>1</td>
+                                    <td>January</td>
+                                    <td>Q1</td>
+                                    <td>2013-Jan</td>
+                                    <td>FM7</td>
+                                    <td>FQ3</td>
+                                </tr>
+                                <tr>
+                                    <td>20130701</td>
+                                    <td>2013-07-01</td>
+                                    <td>2013</td>
+                                    <td>7</td>
+                                    <td>July</td>
+                                    <td>Q3</td>
+                                    <td>2013-Jul</td>
+                                    <td>FM1</td>
+                                    <td>FQ1</td>
+                                </tr>
+                                <tr>
+                                    <td>20131231</td>
+                                    <td>2013-12-31</td>
+                                    <td>2013</td>
+                                    <td>12</td>
+                                    <td>December</td>
+                                    <td>Q4</td>
+                                    <td>2013-Dec</td>
+                                    <td>FM6</td>
+                                    <td>FQ2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. SQL CODE EXPLORER TAB -->
+            <section id="tab-sqllab" class="tab-section">
+                <div class="sql-explorer-layout">
+                    <div class="question-selector glass">
+                        <h3>Questions Navigator</h3>
+                        <div class="q-list" id="q-buttons"></div>
+                    </div>
+
+                    <div class="code-viewer-container glass">
+                        <div class="code-header">
+                            <h3 id="sql-q-title">Q0: Combine Fact Internet Sales</h3>
+                            <button class="btn btn-outline" onclick="copySqlCode()">Copy Minimal SQL</button>
+                        </div>
+                        <div class="q-explanation" id="sql-q-explanation">
+                            Explanations will appear here.
+                        </div>
+                        <pre class="code-block"><code id="sql-code-snippet">-- SQL Snippet</code></pre>
+                        
+                        <div class="result-preview">
+                            <h4>Query Output Summary</h4>
+                            <div id="sql-output-summary" class="output-box">
+                                Row count & metrics summary.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
